@@ -11,15 +11,15 @@ criando as variaveis
 
 const nome = 'Daniel'
 const sobrenome = 'Mata'
-const idade = 25; 
+const idade = 26; 
 const peso = 72;
 const altura = 1.80;
-let imc = peso / (altura * altura); 
-let anoNascimento = 2023 - 26;
+let indiceMassaCorporal = peso / (altura * altura);
+let anoNascimento = 2023 - idade;
 
 
-console.log(nome, sobrenome, 'tem', idade, 'anos, e pesa', peso,'kg, tem',
- altura, 'de altura e seu IMC é de', imc);
-
+console.log(nome, sobrenome, 'tem', idade, 'anos, e pesa', peso,'kg, tem', altura, 'de altura e seu IMC é de', indiceMassaCorporal);
 console.log(nome, sobrenome, 'nasceu em', anoNascimento);
 
+// utilizando template strings | maneira mais moderna
+console.log(`${nome} ${sobrenome} tem ${idade} anos e pesa ${peso} kg, tem ${altura} de altura e seu IMC é de ${indiceMassaCorporal}`);
